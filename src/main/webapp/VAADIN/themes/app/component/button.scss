@@ -1,0 +1,12 @@
+.upload-btn {
+  @include valo-button-static-style;
+  @include valo-button-style;
+
+  @include valo-button-style($background-color: $v-selection-color);
+  $padding-width: 16px;
+  padding: 0 $padding-width;
+  font-weight: 400;
+  $min-width: round($v-unit-size * 2.2);
+  min-width: $min-width;
+  box-sizing: border-box;
+}

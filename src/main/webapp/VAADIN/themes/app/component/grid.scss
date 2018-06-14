@@ -1,0 +1,79 @@
+.grid-action-column {
+  >div {
+    margin-right: 10px;
+  }
+
+  >div:last-child {
+    margin: 0;
+  }
+}
+
+.v-grid-row-selected {
+  >.v-grid-cell {
+    color: #444;
+    border-color: #d4d4d4;
+    background: #eaf2ff none;
+  }
+}
+
+
+.v-grid {
+  .v-grid-scroller, .v-grid-scroller-horizontal { }
+  .v-grid-tablewrapper {
+    .v-grid-header {
+      .v-grid-row {
+        .v-grid-cell, .frozen {}
+        .v-grid-cell-focused {
+
+        }
+        .v-grid-cell-focused:before {
+          border: 2px solid #cfdef7;
+          display: none !important;
+        }
+      }
+    }
+    .v-grid-body {
+      .v-grid-row,
+      .v-grid-row-stripe,
+      .v-grid-row-has-data {
+        .v-grid-cell, .frozen {}
+        .v-grid-cell-focused {
+        }
+        .v-grid-cell-focused:before {
+          border: 2px solid #cfdef7;
+          display: none !important;
+        }
+      }
+    }
+    .v-grid-footer {
+      .v-grid-row {
+        .v-grid-cell, .frozen {}
+        .v-grid-cell-focused {
+
+        }
+        .v-grid-cell-focused:before {
+          border: 2px solid #cfdef7;
+          display: none !important;
+        }
+      }
+    }
+  }
+  .v-grid-header-deco { }
+  .v-grid-footer-deco { }
+  .v-grid-horizontal-scrollbar-deco { }
+  .v-grid-editor {
+    .v-grid-editor-cells { }
+    .v-grid-editor-footer {
+      .v-grid-editor-message { }
+      .v-grid-editor-buttons {
+        .v-grid-editor-save { }
+        .v-grid-editor-cancel { }
+      }
+    }
+  }
+}
+
+.grid-image-cell {
+  position: relative;
+  top: 10px;
+}
