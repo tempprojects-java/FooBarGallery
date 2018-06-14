@@ -30,17 +30,12 @@ public class AppUI extends UI implements ViewDisplay{
         navigator.addProvider(viewProvider);
     }
 
-
     protected void init(VaadinRequest request) {
         final VerticalLayout root = new VerticalLayout();
         root.setWidth(100, Unit.PERCENTAGE);
         root.setSpacing(false);
         root.setHeightUndefined();
         setContent(root);
-
-        if(null == getUI().getSession().getAttribute("images")) {
-            getUI().getSession().setAttribute("images", new HashMap<>());
-        }
 
         springViewDisplay = new VerticalLayout();
         springViewDisplay.setMargin(false);
